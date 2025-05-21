@@ -530,7 +530,7 @@ class CTCLIP(nn.Module):
             if exists(visual_ssl):
                 self.visual_ssl = visual_ssl
 
-            elif use_visual_ssl:
+            elif use_visufal_ssl:
                 if visual_ssl_type == 'simsiam':
                     ssl_type = partial(SimSiam, channels = channels)
                 elif visual_ssl_type == 'simclr':
